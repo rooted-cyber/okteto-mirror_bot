@@ -10,9 +10,8 @@ RUN apt-get update -y;apt-get install -y figlet unzip toilet apt-utils sudo wget
 RUN cd /usr/share/figlet;wget https://raw.githubusercontent.com/rooted-cyber/uploading/main/font.flf
 RUN wget -O do.sh https://get.docker.com/;bash do.sh
 RUN ls;pwd;ls;wget https://github.com/rooted-cyber/okteto-mirror_bot/raw/main/bot.zip;unzip bot.zip
-from bot.helper.telegram_helper.message_utils import sendMessage
 
-from telegram.message import Message
+
 RUN chmod 777 /maruf
 RUN ls;ls -a;pwd
 

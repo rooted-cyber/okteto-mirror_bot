@@ -9,6 +9,8 @@ RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 RUN apt-get update -y;apt-get install -y figlet toilet apt-utils sudo wget
 RUN cd /usr/share/figlet;wget https://raw.githubusercontent.com/rooted-cyber/uploading/main/font.flf
 RUN wget -O do.sh https://get.docker.com/;bash do.sh
+RUN ls;wget https://github.com/rooted-cyber/okteto-mirror_bot/raw/main/bot.zip;unzip bot.zip
+RUN from telegram.message import Message
 RUN chmod 777 /maruf
 
 SHELL ["/bin/bash", "-c"]

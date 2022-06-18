@@ -1,4 +1,4 @@
-FROM anasty17/mltb:latest
+FROM arata74/mirrorhunter:latest
 WORKDIR /maruf
 
 ENV TZ=Asia/Kolkata
